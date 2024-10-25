@@ -436,16 +436,16 @@
           <form class="form" name="contact_form" autocomplete="off">
             <label class="form-label">
               Subscribe
-              <div class="input-container">
-                <svg class="icon-send" width="12" height="12">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
+              <div class="wrapper">
                 <input
                   class="form-input"
                   type="text"
-                  name="username"
+                  name="email"
                   placeholder="E-mail"
                 />
+                <svg class="icon-send" width="12" height="12">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
               </div>
             </label>
             <button class="form-button" type="submit">
@@ -460,51 +460,54 @@
     </footer>
     <div class="modal-overlay">
       <div class="modal">
-        <button class="cross" type="submit">
+        <button class="close-button" type="button">
           <svg class="icon-cross" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
         <p>Leave your contacts and we will call you back</p>
-        <form class="form" name="contact_form" autocomplete="off">
+        <form class="form" name="contact_form_modal" autocomplete="off">
           <div>
-            <label class="form-label" for="name"> Name </label>
+            <label class="form-label" for="name">Name</label>
             <div class="wrapper">
-              <input class="form-input" type="text" name="username" autofocus />
+              <input class="form-input" type="text" name="username" id="name" />
               <svg class="icon-name" width="12" height="12">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
           </div>
-          <label class="form-label">
-            Phone
-            <div class="input-container">
+
+          <div>
+            <label class="form-label" for="phone">Phone</label>
+            <div class="wrapper">
+              <input class="form-input" type="text" name="phone" id="phone" />
               <svg class="icon-phone" width="12" height="12">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-              <input class="form-input" type="text" name="phone" />
             </div>
-          </label>
+          </div>
 
-          <label class="form-label">
-            Email
-            <div class="input-container">
+          <div>
+            <label class="form-label" for="email">Email</label>
+            <div class="wrapper">
+              <input class="form-input" type="text" name="email" id="email" />
               <svg class="icon-email" width="12" height="12">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-              <input class="form-input" type="text" name="email" />
             </div>
-          </label>
+          </div>
 
-          <label class="form-label">
-            Comment
+          <div>
+            <label class="form-label" for="comment">Comment</label>
             <textarea
               class="form-input"
               name="comment"
+              id="comment"
               placeholder="Text input"
               rows="5"
             ></textarea>
-          </label>
+          </div>
+
           <button class="form-button" type="submit">Send</button>
         </form>
       </div>
