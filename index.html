@@ -432,27 +432,50 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <form class="form" name="contact_form" autocomplete="off">
+            <label class="form-label">
+              Subscribe
+              <div class="input-container">
+                <svg class="icon-send" width="12" height="12">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="username"
+                  placeholder="E-mail"
+                />
+              </div>
+            </label>
+            <button class="form-button" type="submit">
+              Subscribe
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="modal-overlay">
       <div class="modal">
-        <div class="cross">
+        <button class="cross" type="submit">
           <svg class="icon-cross" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
-        </div>
-        <h3>Leave your contacts and we will call you back</h3>
+        </button>
+        <p>Leave your contacts and we will call you back</p>
         <form class="form" name="contact_form" autocomplete="off">
-          <label class="form-label">
-            Name
-            <div class="input-container">
+          <div>
+            <label class="form-label" for="name"> Name </label>
+            <div class="wrapper">
+              <input class="form-input" type="text" name="username" autofocus />
               <svg class="icon-name" width="12" height="12">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
-              <input class="form-input" type="text" name="username" autofocus />
             </div>
-          </label>
-
+          </div>
           <label class="form-label">
             Phone
             <div class="input-container">
