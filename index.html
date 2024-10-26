@@ -436,14 +436,12 @@
           <p class="subscribe-paragraph">Subscribe</p>
           <form class="form" name="contact_form" autocomplete="off">
             <label class="footer-label" for="email">
-              <div class="wrapper">
-                <input
-                  class="form-input"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
-              </div>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
             <button class="form-button" type="submit">
               Subscribe
@@ -467,7 +465,7 @@
         </p>
         <form class="form" name="contact_form_modal" autocomplete="off">
           <div class="modal-form-container">
-            <label class="form-label" for="username">Name</label>
+            <label class="form-label" for="user-name">Name</label>
             <div class="wrapper">
               <input
                 class="form-input"
@@ -481,7 +479,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="modal-form-container">
             <label class="form-label" for="phone">Phone</label>
             <div class="wrapper">
               <input class="form-input" type="text" name="phone" id="phone" />
@@ -491,7 +489,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="modal-form-container">
             <label class="form-label" for="email">Email</label>
             <div class="wrapper">
               <input class="form-input" type="text" name="email" id="email" />
@@ -501,15 +499,33 @@
             </div>
           </div>
 
-          <div>
-            <label class="form-label" for="comment">Comment</label>
+          <div class="modal-form-container">
+            <label class="form-label" for="user-comment">Comment</label>
             <textarea
-              class="form-input"
-              name="comment"
-              id="comment"
+              class="user-comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
-              rows="5"
             ></textarea>
+          </div>
+
+          <div class="privacy-container">
+            <input
+              class="privacy"
+              class="visually-hidden"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+            />
+            <label class="privacy-label" for="user-privacy"
+              >I accept the terms and conditions of the
+              <span class="span-policy">
+                <svg class="icon-click" width="10" height="8">
+                  <use href="./images/icons.svg#icon-click"></use>
+                </svg>
+              </span>
+              <a class="link-policy" href="">Privacy Policy</a>
+            </label>
           </div>
 
           <button class="form-button" type="submit">Send</button>
