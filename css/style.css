@@ -637,6 +637,10 @@ button {
     margin-bottom: 8px;
 }
 
+.comment-modal-form-container {
+    margin-bottom: 16px;
+}
+
 .form {
     align-items: center;
     justify-content: center;
@@ -763,6 +767,15 @@ button {
     fill: #F4F4FD;
 }
 
+.privacy:checked+.privacy-label .span-policy {
+    background-color: #404bbf;
+    border: none;
+}
+
+.privacy:checked+.privacy-label .span-policy .icon-click {
+    fill: #F4F4FD;
+}
+
 .link-policy {
     color: #4d5ae5;
 }
@@ -784,7 +797,6 @@ button {
     font-weight: 500;
     font-family: "Roboto", sans-serif;
     text-align: center;
-    transition: background-color 250ms ease-in-out;
 }
 
 .form-button:hover,
@@ -812,7 +824,8 @@ button {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover,
-.form-input:focus {
+
+.form-input:focus + .icon,
+.form-input:hover + .icon {
     fill: #4D5AE5;
 }
