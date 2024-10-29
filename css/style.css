@@ -762,7 +762,7 @@ button {
     color: #4d5ae5;
 }
 
-.privacy:checked + .privacy-label.span-policy {
+.privacy:checked + .privacy-label>.span-policy {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
