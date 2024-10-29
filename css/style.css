@@ -761,18 +761,9 @@ button {
     color: #4d5ae5;
 }
 
-.privacy:checked + .span-policy {
+#user-privacy:checked + .span-policy {
     background-color: #404bbf;
     border: none;
-    fill: #F4F4FD;
-}
-
-.privacy:checked+.privacy-label .span-policy {
-    background-color: #404bbf;
-    border: none;
-}
-
-.privacy:checked+.privacy-label .span-policy .icon-click {
     fill: #F4F4FD;
 }
 
@@ -825,7 +816,7 @@ button {
 }
 
 
-.form-input:focus + .icon,
-.form-input:hover + .icon {
+.form-input:focus + .icon-modal,
+.form-input:hover + .icon-modal {
     fill: #4D5AE5;
 }
