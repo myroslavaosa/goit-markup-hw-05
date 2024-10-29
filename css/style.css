@@ -666,7 +666,7 @@ button {
 
 .wrapper svg {
     position: absolute;
-    left: 10px;
+    left: 16px;
     fill: #2E2F42;
     pointer-events: none;
 }
